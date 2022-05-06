@@ -1,0 +1,61 @@
+﻿@page
+@model Ragnarock_App.GetAllDisplaysModel
+@{ ViewData["Title"] = "GetAllDisplays"; }
+
+<h1>Get All Displays</h1>
+
+<p>
+    <a asp-page="CreateDisplay">Create New Display</a>
+</p>
+
+<form>
+    <p>
+        Search: <input type="text" asp-for="FilterCriteria" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                SoundFile
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.displays)
+        {
+<tr>
+    <td>
+        @item.Value.Id
+    </td>
+    <td>
+        @item.Value.Name
+    </td>
+    <td>
+        @item.Value.Description
+    </td>
+    <td>
+            <audio controls src="~/SoundFiles/@item.Value.SoundFile">test</audio>
+    </td>
+    <td>
+        <p>
+            <a asp-page="EditDisplay" asp-route-id="@item.Key">Edit</a> |
+            <a asp-page="DeleteDisplay" asp-route-id="@item.Key">Delete</a>
+        </p>
+    </td>
+</tr>}
+    </tbody>
+
+</table>
