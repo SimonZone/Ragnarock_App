@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\ImageFiles\" />
     <Folder Include="wwwroot\SoundFiles\" />
   </ItemGroup>
 

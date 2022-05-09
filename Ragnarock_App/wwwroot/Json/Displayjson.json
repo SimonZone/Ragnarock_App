@@ -3,12 +3,14 @@
     "Id": 6,
     "Name": "Enemy",
     "Description": "By imagine dragons",
+    "ImageFile": "Enemy.jpg",
     "SoundFile": "Enemy.mp3"
   },
   "5": {
     "Id": 5,
     "Name": "Starlight",
     "Description": "By Dave",
+    "ImageFile": "Starlight.jpg",
     "SoundFile": "Starlight.mp3"
   }
 }

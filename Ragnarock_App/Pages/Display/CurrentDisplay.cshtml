@@ -23,11 +23,13 @@
                 @Model.display.Description
             </td>
             <td>
+                <img src="~/ImageFiles/@Model.display.ImageFile" width="60" height="70">
+            </td>
+            <td>
                 <audio controls src="~/SoundFiles/@Model.display.SoundFile">test</audio>
             </td>
         </tr>
     </tbody>
-
 <div>
     <a asp-page="GetAllDisplays">Back to List</a>
 </div>
