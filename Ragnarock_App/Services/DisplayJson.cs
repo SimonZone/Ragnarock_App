@@ -25,13 +25,13 @@ namespace Ragnarock_App.Services
         }
         public Dictionary<int, Display> FilterDisplay(string criteria)
         {
-            Dictionary<int, Display> pizzas = AllDisplays();
+            Dictionary<int, Display> displays = AllDisplays();
             Dictionary<int, Display> filteredPizzas = new Dictionary<int, Display>();
-            foreach (var p in pizzas.Values)
+            foreach (var d in displays.Values)
             {
-                if (p.Name.StartsWith(criteria))
+                if (d.Name.StartsWith(criteria))
                 {
-                    filteredPizzas.Add(p.Id, p);
+                    filteredPizzas.Add(d.Id, d);
                 }
             }
             return filteredPizzas;
@@ -39,9 +39,9 @@ namespace Ragnarock_App.Services
 
         public Display GetDisplay(int id)
         {
-            Dictionary<int, Display> pizzas = AllDisplays();
-            Display foundPizza = pizzas[id];
-            return foundPizza;
+            Dictionary<int, Display> displays = AllDisplays();
+            Display foundDisplay = displays[id];
+            return foundDisplay;
         }
 
         public void UpdateDisplay(Display display)
@@ -51,6 +51,7 @@ namespace Ragnarock_App.Services
             foundPizza.Id = display.Id;
             foundPizza.Name = display.Name;
             foundPizza.Description = display.Description;
+            foundPizza.ImageFile = display.ImageFile;
             foundPizza.SoundFile = display.SoundFile;
             JsonWriter.WriteToJson(Displays, JsonFileName);
         }

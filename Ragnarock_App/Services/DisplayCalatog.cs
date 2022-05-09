@@ -15,9 +15,6 @@ namespace Ragnarock_App.Services
         public DisplayCalatog()
         {
             displays = new Dictionary<int, Display>();
-            displays.Add(1, new Display() { Id = 1, Name = "Beggin", Description = "By måneskin", SoundFile = "beggin.mp3" });
-            displays.Add(2, new Display() { Id = 2, Name = "Starlight", Description = "Dave", SoundFile = "Starlight.mp3" });
-            displays.Add(3, new Display() { Id = 3, Name = "Enemy", Description = "Image dragons", SoundFile = "Enemy.mp3" });
         }
 
         public Dictionary<int, Display> AllDisplays()

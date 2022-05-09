@@ -29,6 +29,9 @@
                 Description
             </th>
             <th>
+                ImageFile
+            </th>
+            <th>
                 SoundFile
             </th>
         </tr>
@@ -46,6 +49,9 @@
     <td>
         @item.Value.Description
     </td>
+        <td>
+            @item.Value.ImageFile
+        </td>
     <td>
             <audio controls src="~/SoundFiles/@item.Value.SoundFile">test</audio>
     </td>
@@ -53,6 +59,7 @@
         <p>
             <a asp-page="EditDisplay" asp-route-id="@item.Key">Edit</a> |
             <a asp-page="DeleteDisplay" asp-route-id="@item.Key">Delete</a>
+            <a asp-page="CurrentDisplay" asp-route-id="@item.Key">View Display</a>
         </p>
     </td>
 </tr>}
