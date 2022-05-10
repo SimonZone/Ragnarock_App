@@ -1,35 +1,49 @@
 ﻿@page
 @model Ragnarock_App.CurrentDisplayModel
 @{
+
 }
 
-<head><title>@Model.display.Name</title></head>
+<style>
+    th {
+        border-bottom: 1px solid #ddd;
+        vertical-align: top
+    }
+    td {
 
-<h1>@Model.display.Name</h1>
+    }
+</style>
 
-<table>
+<head>
+    <title>@Model.display.Name</title>
+</head>
 
+<br />
+<table width="100%">
+    <tr>
+        @*First collum*@
+        <th style="text-align:center">
+            <img src="~/ImageFiles/@Model.display.ImageFile" width="500" height="500">
+        </th>
+
+        @*second collum*@
+        <th style="text-align:center">
+            <h1 >Display id: @Model.display.Id @Model.display.Name  </h1>
+            <br /> @Model.display.Description
+            <p s>
+                @Model.display.DisplayText
+            </p>
+
+        </th>
+    </tr>
+    <tr>
+        <th style="height:100px;vertical-align:middle;text-align:center" >
+            <audio controls src="~/SoundFiles/@Model.display.SoundFile">test</audio>
+        </th>
+    </tr>
 
 </table>
-    <tbody>
-        <tr>
-            <td>
-                @Model.display.Id
-            </td>
-            <td>
-                @Model.display.Name
-            </td>
-            <td>
-                @Model.display.Description
-            </td>
-            <td>
-                <img src="~/ImageFiles/@Model.display.ImageFile" width="60" height="70">
-            </td>
-            <td>
-                <audio controls src="~/SoundFiles/@Model.display.SoundFile">test</audio>
-            </td>
-        </tr>
-    </tbody>
 <div>
-    <a asp-page="GetAllDisplays">Back to List</a>
+    <br />
+    <a style="font-size:30px" asp-page="GetAllDisplays">Back to all displays</a>
 </div>
