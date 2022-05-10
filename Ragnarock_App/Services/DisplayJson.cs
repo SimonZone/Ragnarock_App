@@ -10,7 +10,9 @@ namespace Ragnarock_App.Services
 {
     public class DisplayJson : IDisplayRepository
     {
-        string JsonFileName = @"G:\My Drive\Datamatiker 1. sem projekt gruppe\Ragnarock_App\Ragnarock_App\wwwroot\Json\Displayjson.json";
+        string JsonFileName = @"wwwroot\Json\Displayjson.json";
+
+
 
         public void AddDisplay(Display display)
         {
