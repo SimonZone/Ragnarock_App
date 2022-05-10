@@ -10,7 +10,7 @@ namespace Ragnarock_App.Services
 {
     public class DisplayJson : IDisplayRepository
     {
-        string JsonFileName = @"C:\Users\simon\source\repos\Ragnarock_App\Ragnarock_App\wwwroot\Json\Displayjson.json";
+        string JsonFileName = @"G:\My Drive\Datamatiker 1. sem projekt gruppe\Ragnarock_App\Ragnarock_App\wwwroot\Json\Displayjson.json";
 
         public void AddDisplay(Display display)
         {
@@ -51,6 +51,7 @@ namespace Ragnarock_App.Services
             foundPizza.Id = display.Id;
             foundPizza.Name = display.Name;
             foundPizza.Description = display.Description;
+            foundPizza.DisplayText = display.DisplayText;
             foundPizza.ImageFile = display.ImageFile;
             foundPizza.SoundFile = display.SoundFile;
             JsonWriter.WriteToJson(Displays, JsonFileName);
