@@ -10,7 +10,7 @@ namespace Ragnarock_App.Services
 {
     public class DisplayJson : IDisplayRepository
     {
-        string JsonFileName = @"G:\My Drive\Datamatiker 1. sem projekt gruppe\Ragnarock_App\Ragnarock_App\wwwroot\Json\Displayjson.json";
+        string JsonFileName = @"C:wwwroot\Json\Displayjson.json";
 
         public void AddDisplay(Display display)
         {
@@ -39,9 +39,9 @@ namespace Ragnarock_App.Services
 
         public Display GetDisplay(int id)
         {
-            Dictionary<int, Display> displays = AllDisplays();
-            Display foundDisplay = displays[id];
-            return foundDisplay;
+                Dictionary<int, Display> displays = AllDisplays();
+                Display foundDisplay = displays[id];
+                return foundDisplay;
         }
 
         public void UpdateDisplay(Display display)
