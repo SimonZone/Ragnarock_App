@@ -1,7 +1,8 @@
 ﻿@page
 @model Ragnarock_App.CurrentDisplayModel
 @{
-
+    int a = Model.display.Id + 1;
+    int b = Model.display.Id - 1;
 }
 
 <style>
@@ -11,6 +12,29 @@
     }
     td {
 
+    }
+    a {
+        display: inline-block;
+        padding: 8px 16px;
+    }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+    .previous {
+        background-color: red;
+        color: black;
+        font-size: x-large;
+        border-radius: 5px;
+    }
+
+    .next {
+        background-color: green;
+        color: black;
+        font-size: x-large;
+        border-radius: 5px;
     }
 </style>
 
@@ -43,9 +67,19 @@
             <audio controls src="~/SoundFiles/@Model.display.SoundFile">test</audio>
         </th>
     </tr>
-
 </table>
 <div>
     <br />
     <a style="font-size:30px" asp-page="GetAllDisplays">Back to all displays</a>
 </div>
+<table cellpadding="20" align="center">
+    
+    <th class="text-lg-center">
+        <a href="/Display/CurrentDisplay?id=@(b)" class="previous">&laquo; Previous</a>
+    </th>
+    <th class="text-lg-center">
+        <a href="/Display/CurrentDisplay?id=@(a)" class="next">&raquo; Next</a>
+    </th>
+
+</table>
+

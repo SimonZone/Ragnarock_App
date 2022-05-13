@@ -31,6 +31,7 @@ namespace Ragnarock_App
             }
             catalog.UpdateDisplay(display);
             return RedirectToPage("GetAllDisplays");
+
         }
     }
 }

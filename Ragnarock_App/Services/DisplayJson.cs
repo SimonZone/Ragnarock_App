@@ -39,9 +39,9 @@ namespace Ragnarock_App.Services
 
         public Display GetDisplay(int id)
         {
-            Dictionary<int, Display> displays = AllDisplays();
-            Display foundDisplay = displays[id];
-            return foundDisplay;
+                Dictionary<int, Display> displays = AllDisplays();
+                Display foundDisplay = displays[id];
+                return foundDisplay;
         }
 
         public void UpdateDisplay(Display display)
