@@ -10,7 +10,7 @@ namespace Ragnarock_App.Services
 {
     public class DisplayJson : IDisplayRepository
     {
-        string JsonFileName = @"C:wwwroot\Json\Displayjson.json";
+        string JsonFileName = @"wwwroot\Json\Displayjson.json";
 
         public void AddDisplay(Display display)
         {
@@ -26,15 +26,15 @@ namespace Ragnarock_App.Services
         public Dictionary<int, Display> FilterDisplay(string criteria)
         {
             Dictionary<int, Display> displays = AllDisplays();
-            Dictionary<int, Display> filteredPizzas = new Dictionary<int, Display>();
+            Dictionary<int, Display> filteredDisplay = new Dictionary<int, Display>();
             foreach (var d in displays.Values)
             {
                 if (d.Name.StartsWith(criteria))
                 {
-                    filteredPizzas.Add(d.Id, d);
+                    filteredDisplay.Add(d.Id, d);
                 }
             }
-            return filteredPizzas;
+            return filteredDisplay;
         }
 
         public Display GetDisplay(int id)
@@ -47,13 +47,13 @@ namespace Ragnarock_App.Services
         public void UpdateDisplay(Display display)
         {
             Dictionary<int, Display> Displays = AllDisplays();
-            Display foundPizza = Displays[display.Id];
-            foundPizza.Id = display.Id;
-            foundPizza.Name = display.Name;
-            foundPizza.Description = display.Description;
-            foundPizza.DisplayText = display.DisplayText;
-            foundPizza.ImageFile = display.ImageFile;
-            foundPizza.SoundFile = display.SoundFile;
+            Display foundDisplay = Displays[display.Id];
+            foundDisplay.Id = display.Id;
+            foundDisplay.Name = display.Name;
+            foundDisplay.Description = display.Description;
+            foundDisplay.DisplayText = display.DisplayText;
+            foundDisplay.ImageFile = display.ImageFile;
+            foundDisplay.SoundFile = display.SoundFile;
             JsonWriter.WriteToJson(Displays, JsonFileName);
         }
 
