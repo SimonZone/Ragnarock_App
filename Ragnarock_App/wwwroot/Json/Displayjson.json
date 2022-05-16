@@ -1,18 +1,50 @@
 {
   "1": {
     "Id": 1,
-    "Name": "Enemy",
-    "Description": "By imagine dragons",
-    "DisplayText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "ImageFile": "Enemy.jpg",
+    "Name": "First Light",
+    "Description": "Artist",
+    "DisplayText": "Koncerter      ",
+    "ImageFile": "First Light.jpg",
     "SoundFile": "Enemy.mp3"
   },
   "2": {
     "Id": 2,
-    "Name": "Starlight",
-    "Description": "By Dave",
-    "DisplayText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "ImageFile": "Starlight.jpg",
+    "Name": "Gamle Dansk",
+    "Description": "Artist",
+    "DisplayText": " ",
+    "ImageFile": "Gamle Dansk.jpg",
+    "SoundFile": "Starlight.mp3"
+  },
+  "3": {
+    "Id": 3,
+    "Name": "DJ",
+    "Description": "Artist",
+    "DisplayText": " ",
+    "ImageFile": "DJ.jpg",
+    "SoundFile": "Starlight.mp3"
+  },
+  "4": {
+    "Id": 4,
+    "Name": "Jiggerbug",
+    "Description": "Artist",
+    "DisplayText": " ",
+    "ImageFile": "Jiggerbug.png",
+    "SoundFile": "Starlight.mp3"
+  },
+  "5": {
+    "Id": 5,
+    "Name": "Hiphop / Breakdance",
+    "Description": "Artist",
+    "DisplayText": " ",
+    "ImageFile": "Hip Hop.png",
+    "SoundFile": "Starlight.mp3"
+  },
+  "6": {
+    "Id": 6,
+    "Name": "Modern",
+    "Description": "Artist",
+    "DisplayText": " ",
+    "ImageFile": "Modern.png",
     "SoundFile": "Starlight.mp3"
   }
 }
