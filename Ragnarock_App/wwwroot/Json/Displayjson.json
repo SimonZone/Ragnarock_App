@@ -19,7 +19,7 @@
     "Id": 3,
     "Name": "DJ",
     "Description": "Artist",
-    "DisplayText": " ",
+    "DisplayText": " test test test",
     "ImageFile": "DJ.jpg",
     "SoundFile": "Starlight.mp3"
   },
