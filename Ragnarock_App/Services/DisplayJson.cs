@@ -23,13 +23,14 @@ namespace Ragnarock_App.Services
         {
             return JsonReader.ReadJson(JsonFileName);
         }
+
         public Dictionary<int, Display> FilterDisplay(string criteria)
         {
             Dictionary<int, Display> displays = AllDisplays();
             Dictionary<int, Display> filteredDisplay = new Dictionary<int, Display>();
             foreach (var d in displays.Values)
             {
-                if (d.Name.StartsWith(criteria))
+                if (d.Name.ToUpper().StartsWith(criteria.ToUpper()))
                 {
                     filteredDisplay.Add(d.Id, d);
                 }
