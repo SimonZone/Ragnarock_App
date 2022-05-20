@@ -12,6 +12,7 @@ namespace Ragnarock_App
 {
     public class EditDisplayModel : PageModel
     {
+       
         [BindProperty]
         public Display display { get; set; }
         private IDisplayRepository catalog;

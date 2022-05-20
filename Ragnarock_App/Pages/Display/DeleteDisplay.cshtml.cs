@@ -9,8 +9,9 @@ using Ragnarock_App.Repository;
 
 namespace Ragnarock_App
 {
-    public class DeleteDisplayModel : PageModel
+    public class DeleteDisplayModel : PageModel 
     {
+       
         [BindProperty]
         public Display display { get; set; }
         private IDisplayRepository catalog;
@@ -25,6 +26,7 @@ namespace Ragnarock_App
         }
 
         public IActionResult OnPost(int id)
+           
         {
             catalog.DeleteDisplay(id);
             return RedirectToPage("GetAllDisplays");

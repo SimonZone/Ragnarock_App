@@ -5,14 +5,28 @@
     int b = Model.display.Id - 1;
 }
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Administrator</title>
+</head>
+<body>
+
+    <h1>Administrator @Model.Brugernavn</h1>
+    <a asp-page="Administrator" asp-page-handler="Logud">Logud</a>
+
+</body>
+</html>
 <style>
     th {
         border-bottom: 1px solid #ddd;
         vertical-align: top
     }
-    td {
 
+    td {
     }
+
     a {
         display: inline-block;
         padding: 8px 16px;
@@ -29,18 +43,21 @@
         font-size: x-large;
         border-radius: 5px;
     }
+
     .back {
-        background-color: yellow;
-        color: black;
+        background-color: black;
+        color: white;
         border-radius: 5px;
         text-align: left;
-        block-size:fit-content;
+        block-size: fit-content;
     }
+
     div {
         text-align: left;
         padding: 5px 5px 5px 5px;
         inline-size: 0px;
     }
+
     .next {
         background-color: green;
         color: black;
@@ -63,7 +80,7 @@
 
         @*second collum*@
         <th style="text-align:center">
-            <h1 >Display id: @Model.display.Id @Model.display.Name  </h1>
+            <h1>Display id: @Model.display.Id @Model.display.Name  </h1>
             <br /> @Model.display.Description
             <p s>
                 @Model.display.DisplayText
@@ -74,7 +91,7 @@
 
 
     <tr>
-        <th style="height:100px;vertical-align:middle;text-align:center" >
+        <th style="height:100px;vertical-align:middle;text-align:center">
             <audio controls src="~/SoundFiles/@Model.display.SoundFile">test</audio>
         </th>
     </tr>

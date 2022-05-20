@@ -3,6 +3,33 @@
 @{
     ViewData["Title"] = "Hjem";
 }
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <h3>LoginForm</h3>
+    @Model.Msg
+    <form method="post" asp-page="Index">
+        <table>
+            <tr>
+                <td>Brugernavn</td>
+                <td><input type="text" asp-for="@Model.Brugernavn" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" asp-for="@Model.Adgangskode" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Login" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
 <style>
     .start {
         background-color: green;

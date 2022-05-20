@@ -24,7 +24,7 @@ namespace Ragnarock_App
         }
 
         public IActionResult OnPost()
-        {
+        { 
             if (!ModelState.IsValid)
             {
                 return Page();
