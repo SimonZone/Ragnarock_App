@@ -1,4 +1,23 @@
 ﻿<!DOCTYPE html>
+<style>
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        white-space: nowrap;
+        line-height: 5px;
+        padding-block: 0px;
+    }
+
+    .html {
+        position: relative;
+        min-height: 100%
+    }
+
+    .body {
+        margin-bottom: 20px;
+    }
+</style>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,6 +26,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -24,10 +44,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Display/GetAllDisplays">Displays</a>
                         </li>
-                        <li class ="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Om os">Om os</a>
-                        </li> 
-                        
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -45,5 +65,10 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+    <footer class="border-top footer text-muted text-sm-left">
+        <div class="container">
+            <p>Læs mere omkring <a href="https://museumragnarock.dk/">MUSEET FOR POP, ROCK OG UNGDOMSKULTUR</a>.</p>
+        </div>
+    </footer>
 </body>
 </html>

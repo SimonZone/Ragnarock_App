@@ -3,12 +3,45 @@
 @{
     ViewData["Title"] = "Hjem";
 }
-
+<style>
+    .start {
+        background-color: green;
+        color: black;
+        font-size: x-large;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .center {
+        padding-top:20px;
+    }
+    .html {
+        position: relative;
+        min-height: 100%
+    }
+    .body {
+        margin-bottom: 60px;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        white-space: nowrap;
+        line-height: 20px;
+    }
+    a {
+        display: inline-block;
+        padding: 8px 16px;
+    }
+</style>
+<html>
+<body>
 <div class="text-center">
     <h1 class="display-4">Velkommen til RDP</h1>
     
     <img src="~/ImageFiles/Museum_Ragnarock.jpg" alt="" height="450" width="600" />
 </div>
-<div class="text-sm-center">
-    <p>Læs mere omkring <a href="https://museumragnarock.dk/">MUSEET FOR POP, ROCK OG UNGDOMSKULTUR</a>.</p>
+<div class="text-lg-center center">
+        <a href="/Display/CurrentDisplay?id=1" class="start"> Start Tour</a>
 </div>
+</body>
+</html>

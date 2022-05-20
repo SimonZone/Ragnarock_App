@@ -29,7 +29,18 @@
         font-size: x-large;
         border-radius: 5px;
     }
-
+    .back {
+        background-color: yellow;
+        color: black;
+        border-radius: 5px;
+        text-align: left;
+        block-size:fit-content;
+    }
+    div {
+        text-align: left;
+        padding: 5px 5px 5px 5px;
+        inline-size: 0px;
+    }
     .next {
         background-color: green;
         color: black;
@@ -68,18 +79,18 @@
         </th>
     </tr>
 </table>
-<div>
-    <br />
-    <a style="font-size:30px" asp-page="GetAllDisplays">Back to all displays</a>
-</div>
+
 <table cellpadding="20" align="center">
-    
+
     <th class="text-lg-center">
         <a href="/Display/CurrentDisplay?id=@(b)" class="previous">&laquo; Previous</a>
     </th>
     <th class="text-lg-center">
         <a href="/Display/CurrentDisplay?id=@(a)" class="next">&raquo; Next</a>
     </th>
-
 </table>
-
+<body>
+    <div class="text-md-center">
+        <a asp-page="GetAllDisplays" class="back">Back to all displays</a>
+    </div>
+</body>

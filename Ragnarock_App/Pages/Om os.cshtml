@@ -3,6 +3,15 @@
 @{
     ViewData["Title"] = "Om os";
 }
+<style>
+    .back {
+        background-color: yellow;
+        color: black;
+        border-radius: 10px;
+        text-align: left;
+        block-size: fit-content;
+        
+</style>
 <div class="text-center">
     <h1 class="display-4">Om arkitekturen</h1>
     <br />
@@ -17,8 +26,8 @@
     <div class=" text-center">
         <img src="~/ImageFiles/Museum_Ragnarock.jpg" alt="" height="450" width="600" />
         <br />
-        <a asp-page="/Display/GetAllDisplays">Displays </a>
-        <a asp-page="/Index">Hjem</a>
+        <a asp-page="/Display/GetAllDisplays"class="back">Displays </a>
+        <a asp-page="/Index"class="back">Hjem</a>
     </div>
     
     
