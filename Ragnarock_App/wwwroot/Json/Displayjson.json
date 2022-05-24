@@ -1,50 +1,56 @@
 {
-  "1": {
+  "0": {
     "Id": 1,
     "Name": "First Light",
     "Description": "Artist",
     "DisplayText": "Koncerter      ",
     "ImageFile": "First Light.jpg",
-    "SoundFile": "Enemy.mp3"
+    "SoundFile": "Enemy.mp3",
+    "Rating": 0.0
   },
-  "2": {
+  "1": {
     "Id": 2,
     "Name": "Gamle Dansk",
     "Description": "Artist",
     "DisplayText": " ",
     "ImageFile": "Gamle Dansk.jpg",
-    "SoundFile": "Starlight.mp3"
+    "SoundFile": "Starlight.mp3",
+    "Rating": 0.0
   },
-  "3": {
+  "2": {
     "Id": 3,
     "Name": "DJ",
     "Description": "Artist",
     "DisplayText": " test test test",
     "ImageFile": "DJ.jpg",
-    "SoundFile": "Starlight.mp3"
+    "SoundFile": "Starlight.mp3",
+    "Rating": 0.0
   },
-  "4": {
+  "3": {
     "Id": 4,
     "Name": "Jiggerbug",
     "Description": "Artist",
     "DisplayText": " ",
     "ImageFile": "Jiggerbug.png",
-    "SoundFile": "Starlight.mp3"
+    "SoundFile": "Starlight.mp3",
+    "Rating": 0.0
   },
-  "5": {
+  "4": {
     "Id": 5,
     "Name": "Hiphop / Breakdance",
     "Description": "Artist",
     "DisplayText": " ",
     "ImageFile": "Hip Hop.png",
-    "SoundFile": "Starlight.mp3"
+    "SoundFile": "Starlight.mp3",
+    "Rating": 0.0
   },
-  "6": {
+  "5": {
     "Id": 6,
     "Name": "Modern",
     "Description": "Artist",
     "DisplayText": " ",
     "ImageFile": "Modern.png",
-    "SoundFile": "Starlight.mp3"
+    "SoundFile": "Starlight.mp3",
+    "Rating": 0.0
   }
 }

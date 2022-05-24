@@ -32,7 +32,7 @@
                 ImageFile
             </th>
             <th>
-                SoundFile
+                Rating
             </th>
         </tr>
     </thead>
@@ -53,7 +53,7 @@
             <img src="~/ImageFiles/@item.Value.ImageFile" width="60" height="70">
         </td>
     <td>
-            <audio controls src="~/SoundFiles/@item.Value.SoundFile">test</audio>
+            @item.Value.Rating
     </td>
     <td>
         <p>

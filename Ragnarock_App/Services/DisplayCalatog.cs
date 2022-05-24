@@ -43,6 +43,11 @@ namespace Ragnarock_App.Services
             return myDisplays;
         }
 
+        public void UpdateDisplayRating(Display display)
+        {
+            displays[display.Id] = display;
+        }
+
         public Display GetDisplay(int id)
         {
             return displays[id];

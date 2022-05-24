@@ -13,5 +13,6 @@ namespace Ragnarock_App.Model
         public string DisplayText { get; set; }
         public string ImageFile { get; set; }
         public string SoundFile { get; set; }
+        public double Rating { get; set; }
     }
 }

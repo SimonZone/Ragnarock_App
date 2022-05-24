@@ -39,7 +39,7 @@ namespace Ragnarock_App
             {
                 return Page();
             }
-            catalog.UpdateDisplay(display);
+            catalog.UpdateDisplayRating(display);
             return RedirectToPage("GetAllDisplays");
 
         }

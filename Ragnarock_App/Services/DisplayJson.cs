@@ -12,6 +12,15 @@ namespace Ragnarock_App.Services
     {
         string JsonFileName = @"wwwroot\Json\Displayjson.json";
 
+        public void UpdateDisplayRating(Display display)
+        {
+            Dictionary<int, Display> Displays = AllDisplays();
+            Display foundDisplay = Displays[display.Id];
+            foundDisplay.Rating = (display.Rating + foundDisplay.Rating) / 2;
+            foundDisplay.Rating = Math.Round(foundDisplay.Rating, 1, MidpointRounding.AwayFromZero);
+            JsonWriter.WriteToJson(Displays, JsonFileName);
+        }
+
         public void AddDisplay(Display display)
         {
             Dictionary<int, Display> displays = AllDisplays();

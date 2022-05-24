@@ -13,6 +13,7 @@ namespace Ragnarock_App.Repository
         void DeleteDisplay(int id);
         void AddDisplay(Display display);
         void UpdateDisplay(Display display);
+        void UpdateDisplayRating(Display display);
         Display GetDisplay(int id);
     }
 }
