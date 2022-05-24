@@ -19,7 +19,7 @@ namespace Ragnarock_App.Pages
 
         public string Msg { get; set; }
 
-        bool LoggediIn = false; 
+        
 
 
         public IActionResult OnPost()
@@ -27,8 +27,9 @@ namespace Ragnarock_App.Pages
             if (Brugernavn.Equals("RDP") && Adgangskode.Equals("4444"))
             {
                 HttpContext.Session.SetString("Brugernavn", Brugernavn);
-                LoggediIn = true;
+               
                 return RedirectToPage("Display/GetAllDisplays");
+                
             }
             else
             {

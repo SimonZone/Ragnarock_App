@@ -30,7 +30,6 @@ namespace Ragnarock_App
             services.AddRazorPages();
             services.AddTransient<IDisplayRepository, DisplayJson>();
             services.AddSession();
-
             services.AddMvc();
         }
 
