@@ -43,9 +43,6 @@ namespace Ragnarock_App.Pages
             _logger = logger;
         }
 
-        public void OnGet()
-        {
-
-        }
+       
     }
 }

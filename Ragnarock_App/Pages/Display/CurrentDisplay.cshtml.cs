@@ -13,10 +13,7 @@ namespace Ragnarock_App
     public class CurrentDisplayModel : PageModel
     {
         public string Brugernavn { get; set; }
-        public void OnGet()
-        {
-            Brugernavn = HttpContext.Session.GetString("Brugernavn");
-        }
+       
 
         public IActionResult OnGetLogout()
         {
@@ -33,6 +30,7 @@ namespace Ragnarock_App
         public void OnGet(int id)
         {
             display = catalog.GetDisplay(id);
+            Brugernavn = HttpContext.Session.GetString("Brugernavn");
         }
 
         public IActionResult OnPost()
