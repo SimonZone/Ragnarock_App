@@ -29,40 +29,40 @@
                 Description
             </th>
             <th>
-                ImageFile
+                Rating
             </th>
             <th>
-                Rating
+                ImageFile
             </th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.displays)
         {
-<tr>
-    <td>
-        @item.Value.Id
-    </td>
-    <td>
-        @item.Value.Name
-    </td>
-    <td>
-        @item.Value.Description
-    </td>
-        <td>
-            <img src="~/ImageFiles/@item.Value.ImageFile" width="60" height="70">
-        </td>
-    <td>
-            @item.Value.Rating
-    </td>
-    <td>
-        <p>
-            <a asp-page="EditDisplay" asp-route-id="@item.Key">Edit</a> |
-            <a asp-page="DeleteDisplay" asp-route-id="@item.Key">Delete</a>
-            <a asp-page="CurrentDisplay" asp-route-id="@item.Key">View Display</a>
-        </p>
-    </td>
-</tr>}
+        <tr>
+            <td>
+                @item.Value.Id
+            </td>
+            <td>
+                @item.Value.Name
+            </td>
+            <td>
+                @item.Value.Description
+            </td>
+            <td>
+                Rating: @item.Value.Rating
+            </td>
+            <td>
+                <img src="~/ImageFiles/@item.Value.ImageFile" width="60" height="70">
+            </td>
+            <td>
+                <p>
+                    <a asp-page="EditDisplay" asp-route-id="@item.Key">Edit</a> |
+                    <a asp-page="DeleteDisplay" asp-route-id="@item.Key">Delete</a>
+                    <a asp-page="CurrentDisplay" asp-route-id="@item.Key">View Display</a>
+                </p>
+            </td>
+        </tr>}
     </tbody>
 
 </table>

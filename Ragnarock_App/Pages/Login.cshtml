@@ -1,0 +1,28 @@
+﻿@page
+@model Ragnarock_App.Pages.LoginModel
+@{
+}
+
+<h1> Login Side </h1>
+
+
+
+<h3>LoginForm</h3>
+@Model.Msg
+<form method="post" asp-page="Login">
+    <table>
+        <tr>
+            <td>Brugernavn</td>
+            <td><input type="text" asp-for="@Model.Brugernavn" /></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" asp-for="@Model.Adgangskode" /></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Login" /></td>
+        </tr>
+    </table>
+</form>
+

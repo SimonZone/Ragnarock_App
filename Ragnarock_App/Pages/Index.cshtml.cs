@@ -11,32 +11,7 @@ namespace Ragnarock_App.Pages
 {
     public class IndexModel : PageModel
     {
-        [BindProperty]
-        public string Brugernavn { get; set; }
-
-        [BindProperty]
-        public string Adgangskode { get; set; }
-
-        public string Msg { get; set; }
-
-        
-
-
-        public IActionResult OnPost()
-        {
-            if (Brugernavn.Equals("RDP") && Adgangskode.Equals("4444"))
-            {
-                HttpContext.Session.SetString("Brugernavn", Brugernavn);
-               
-                return RedirectToPage("Display/GetAllDisplays");
-                
-            }
-            else
-            {
-                Msg = "Fejl";
-                return Page();
-            }
-        }
+      
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -44,6 +19,9 @@ namespace Ragnarock_App.Pages
             _logger = logger;
         }
 
-       
+        public void OnGet()
+        {
+
+        }
     }
 }

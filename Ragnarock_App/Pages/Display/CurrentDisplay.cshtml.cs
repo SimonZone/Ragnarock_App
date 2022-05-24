@@ -13,7 +13,7 @@ namespace Ragnarock_App
     public class CurrentDisplayModel : PageModel
     {
         public string Brugernavn { get; set; }
-       
+      
 
         public IActionResult OnGetLogout()
         {
@@ -29,8 +29,8 @@ namespace Ragnarock_App
         }
         public void OnGet(int id)
         {
-            display = catalog.GetDisplay(id);
             Brugernavn = HttpContext.Session.GetString("Brugernavn");
+            display = catalog.GetDisplay(id);
         }
 
         public IActionResult OnPost()
@@ -40,7 +40,7 @@ namespace Ragnarock_App
                 return Page();
             }
             catalog.UpdateDisplayRating(display);
-            return RedirectToPage("GetAllDisplays");
+            return RedirectToPage("DisplayWithoutEdit");
 
         }
     }

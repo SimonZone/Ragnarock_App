@@ -1,39 +1,39 @@
 {
   "0": {
-    "Id": 1,
+    "Id": 0,
     "Name": "First Light",
-    "Description": "Artist",
-    "DisplayText": "Koncerter      ",
+    "Description": "dec",
+    "DisplayText": null,
     "ImageFile": "First Light.jpg",
     "SoundFile": "Enemy.mp3",
-    "Rating": 0.0
+    "Rating": 4.3
   },
   "1": {
-    "Id": 2,
-    "Name": "Gamle Dansk",
-    "Description": "Artist",
-    "DisplayText": " ",
-    "ImageFile": "Gamle Dansk.jpg",
-    "SoundFile": "Starlight.mp3",
-    "Rating": 0.0
+    "Id": 1,
+    "Name": "test",
+    "Description": null,
+    "DisplayText": null,
+    "ImageFile": null,
+    "SoundFile": null,
+    "Rating": 4.0
   },
   "2": {
-    "Id": 3,
-    "Name": "DJ",
-    "Description": "Artist",
-    "DisplayText": " test test test",
-    "ImageFile": "DJ.jpg",
-    "SoundFile": "Starlight.mp3",
-    "Rating": 0.0
+    "Id": 2,
+    "Name": "test",
+    "Description": null,
+    "DisplayText": null,
+    "ImageFile": null,
+    "SoundFile": null,
+    "Rating": 4.0
   },
   "3": {
-    "Id": 4,
-    "Name": "Jiggerbug",
-    "Description": "Artist",
-    "DisplayText": " ",
-    "ImageFile": "Jiggerbug.png",
-    "SoundFile": "Starlight.mp3",
-    "Rating": 0.0
+    "Id": 3,
+    "Name": "test",
+    "Description": null,
+    "DisplayText": null,
+    "ImageFile": null,
+    "SoundFile": null,
+    "Rating": 4.0
   },
   "4": {
     "Id": 5,
