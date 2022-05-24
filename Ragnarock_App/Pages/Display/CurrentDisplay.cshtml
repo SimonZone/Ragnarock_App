@@ -6,18 +6,14 @@
 }
 
 <!DOCTYPE html>
-<html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Administrator</title>
 </head>
-<body>
 
-    <h1>Administrator @Model.Brugernavn</h1>
-    <a asp-page="Administrator" asp-page-handler="Logud">Logud</a>
-
-</body>
-</html>
+    @* skal nok ikke være her
+        <h1>Administrator @Model.Brugernavn</h1>
+    <a asp-page="Administrator" asp-page-handler="Logud">Logud</a>*@
 
 
 <head>
@@ -67,14 +63,14 @@
 <table cellpadding="20" align="center">
 
     <th class="text-lg-center">
-        <a href="/Display/CurrentDisplay?id=@(b)" class="previous">&laquo; Previous</a>
+        <a href="/Display/CurrentDisplay?id=@(b)" class="previous">&laquo; Tilbage</a>
     </th>
     <th class="text-lg-center">
-        <a href="/Display/CurrentDisplay?id=@(a)" class="next">&raquo; Next</a>
+        <a href="/Display/CurrentDisplay?id=@(a)" class="next">Næste &raquo;</a>
     </th>
 </table>
 <body>
     <div class="text-md-center">
-        <a asp-page="GetAllDisplays" class="back">Back to all displays</a>
+        <a asp-page="DisplayWithoutEdit" class="back">Back to all displays</a>
     </div>
 </body>

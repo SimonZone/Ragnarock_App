@@ -20,19 +20,22 @@
     <thead>
         <tr>
             <th>
-                Id
-            </th>
-            <th>
-                Name
-            </th>
-            <th>
-                Description
-            </th>
-            <th>
-                Rating
+                ID
             </th>
             <th>
                 ImageFile
+            </th>
+            <th>
+                Udstilling
+            </th>
+            <th>
+                Beskrivelse
+            </th>
+            <th>
+                Score
+            </th>
+            <th>
+                SoundFile
             </th>
         </tr>
     </thead>
@@ -44,6 +47,9 @@
                 @item.Value.Id
             </td>
             <td>
+                <img src="~/ImageFiles/@item.Value.ImageFile" width="120" height="120">
+            </td>
+            <td>
                 @item.Value.Name
             </td>
             <td>
@@ -53,7 +59,7 @@
                 Rating: @item.Value.Rating
             </td>
             <td>
-                <img src="~/ImageFiles/@item.Value.ImageFile" width="60" height="70">
+                <audio controls src="~/SoundFiles/@item.Value.SoundFile">Lyd Klip</audio>
             </td>
             <td>
                 <p>
@@ -64,5 +70,4 @@
             </td>
         </tr>}
     </tbody>
-
 </table>

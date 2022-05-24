@@ -4,8 +4,11 @@
 }
 
 <h1>Get All Displays</h1>
-
-
+<style>
+    td {
+        font-size: 24px;
+    }
+</style>
 
 <form>
     <p>
@@ -19,49 +22,38 @@
     <thead>
         <tr>
             <th>
-                Id
             </th>
             <th>
-                Name
+                Udstilling
             </th>
             <th>
-                Description
+                Score
             </th>
-            <th>
-                Rating
-            </th>
-            <th>
-                ImageFile
-            </th>
+
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.displays)
         {
-<tr>
-    <td>
-        @item.Value.Id
-    </td>
-    <td>
-        @item.Value.Name
-    </td>
-    <td>
-        @item.Value.Description
-    </td>
-    <td>
-        Rating: @item.Value.Rating
-    </td>
-    <td>
-        <img src="~/ImageFiles/@item.Value.ImageFile" width="60" height="70">
-    </td>
-    <td>
-        <p>
+            <tr>
+                <td>
+                    <img src="~/ImageFiles/@item.Value.ImageFile" width="200" height="200">
+                </td>
+                <td>
+                    @item.Value.Name
+                </td>
+                <td>
+                    Rating: @item.Value.Rating
+                </td>
+                <td>
+                    <p>
 
-            <a asp-page="CurrentDisplay" asp-route-id="@item.Key">View Display</a>
-        </p>
+                        <a asp-page="CurrentDisplay" asp-route-id="@item.Key">View Display</a>
+                    </p>
 
-    </td>
-</tr>}
+                </td>
+            </tr>
+        }
     </tbody>
 
 </table>
