@@ -2,10 +2,10 @@
   "0": {
     "Id": 0,
     "Name": "First Light",
-    "Description": "Artist",
-    "DisplayText": null,
+    "Description": "Joseph Swan",
+    "DisplayText": "Det første lys der blev brugt til en koncert var som koncept en lava lampe hvor der blev lyst igennem op på en mur som gav en psychedelics effect",
     "ImageFile": "First Light.jpg",
-    "SoundFile": "Enemy.mp3",
+    "SoundFile": "History of Rock.mp3",
     "Rating": 2.5
   },
   "1": {
@@ -14,7 +14,7 @@
     "Description": "Artist",
     "DisplayText": null,
     "ImageFile": "Gamle Dansk.jpg",
-    "SoundFile": "Enemy.mp3",
+    "SoundFile": "History of Rock.mp3",
     "Rating": 2.5
   },
   "2": {
@@ -23,7 +23,7 @@
     "Description": "Artist",
     "DisplayText": null,
     "ImageFile": "Rocker.png",
-    "SoundFile": "Enemy.mp3",
+    "SoundFile": "History of Rock.mp3",
     "Rating": 2.5
   },
   "3": {
@@ -32,7 +32,7 @@
     "Description": "Artist",
     "DisplayText": null,
     "ImageFile": "Jiggerbug.png",
-    "SoundFile": "Enemy.mp3",
+    "SoundFile": "History of Rock.mp3",
     "Rating": 2.5
   },
   "4": {
@@ -41,7 +41,7 @@
     "Description": "Artist",
     "DisplayText": null,
     "ImageFile": "Hip Hop.png",
-    "SoundFile": "Starlight.mp3",
+    "SoundFile": "History of Rock.mp3",
     "Rating": 2.5
   }
 }
